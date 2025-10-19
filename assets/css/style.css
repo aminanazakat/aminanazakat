@@ -8,7 +8,7 @@ body {
 #toggleBackground {
   position: fixed;
   top: 15px;
-  right: 15px;
+  right: 25px;
   z-index: 9999;
   background-color: #e846af;
   border: none;
@@ -16,6 +16,11 @@ body {
   font-size: 25px;
 }
 
+@media (max-width: 768px) {
+  #toggleBackground {
+    right: 70px; /* move it a bit to the left */
+  }
+}
 #toggleBackground:hover {
   background-color: #eeeeee;
 }
@@ -1044,6 +1049,19 @@ background-size: cover;
     font-size: 1.1rem;
     font-weight: 600;
   }
+    .portfolio-card .stack h5{
+     font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  }
+  .portfolio-card .desc{
+  font-size: 12px;
+ text-align: justify;
+
+  }
   .portfolio-links {
     display: flex;
     justify-content: center;
@@ -1051,17 +1069,20 @@ background-size: cover;
   }
   .portfolio-links a {
     font-size: 1.6rem;
-    color: #444;
+     color: #f924ae;
     transition: color 0.3s ease, transform 0.2s ease;
   }
-  .portfolio-links a:hover {
-    transform: scale(1.2);
-  }
-  .portfolio-links a:first-child:hover {
-    color: #f924ae;
-  }
-  .portfolio-links a:last-child:hover {
-    color: #f924ae;
+   .portfolio-links .link-btn {
+     font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1px 30px;
+  border-radius: 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: #444;
+    transition: color 0.3s ease, transform 0.2s ease;
   }
 /*--------------------------------------------------------------
 # Contact
